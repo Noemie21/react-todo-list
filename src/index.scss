@@ -1,0 +1,22 @@
+
+$theme-colors: (
+  "primary": #764abc,
+);
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+body {
+  background-color: rgb(240, 240, 240);
+}
+
+.navbar {
+  .navbar-brand {
+    font-size: 1.4em;
+  }
+}
+
+.list-todo {
+  .list-group-item{
+    font-size: 1.5em;
+  }
+}
