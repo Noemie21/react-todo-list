@@ -4,7 +4,7 @@ import Footer from './Footer'
 import AddTodo from '../containers/AddTodo'
 import VisibleTodoList from '../containers/VisibleTodoList'
 
-const App = () => (
+const App = ({ match: { params } }) => (
     <Fragment>
         <Navbar />
         <div className="container">
@@ -13,7 +13,7 @@ const App = () => (
                     <AddTodo />
                 </div>
                 <div className="card-body">
-                    <VisibleTodoList />
+                    <VisibleTodoList filter={params.filter || 'SHOW_ALL'} />
                 </div>
                 <div className="card-footer">
                     <Footer />
